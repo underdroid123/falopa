@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva La Armonia</title>
+</head>
+<header>
+    <style>
+        body {
+            background-color: rgb(196, 196, 196);
+            text-align: center;
+        }
+    </style>
+</header>
+<body>
+    <h1 style="background-color: rgb(60, 135, 205);color: aliceblue;">Estadia en el predio de descanso "LA ARMONIA"-reservas</h1>
+    <p style="background-color: rgb(204, 255, 252);color: rgb(91, 144, 174);">los campos marcados con asterisco (*) son obligatorios</p>
+    <form>
+        <label for="alojamiento">alojamiento</label>
+        <select name="alojamiento" id="alojamiento">
+            <option value="departamento">departamento</option>
+            <option value="cabaña">cabaña</option>
+            <option value="HabitacionSimple">Habitacion Simple</option>
+        </select>
+        <br>
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre">
+        <label for="apellido">apellido</label>
+        <input type="text" id="apellido">
+        <label for="CantidadPersonas"><p>Cantidad de acompañantes</p></label>
+            <input type="number" id="CantidadPersonas" ><input type="number" id="CantidadPersonas" ><input type="number" id="CantidadPersonas">
+        <label for="correo" for="telefono"><p>correo electronico y numero de telefono</p></label>
+            <input type="text" id="correo" placeholder="correo electronico"> <input type="text" id="telefono" placeholder="numero de telefono">
+            <br>
+        <label for="checkin">checkin(*)</label>
+            <input type="date" id="checkin">
+        <label for="checkout">checkout(*)</label>
+            <input type="date" id="checkout">
+        <p>medio de transporte</p>
+        <select name="medio de transporte">
+            <option value="motocicleta">motocicleta</option>
+            <option value="automovil">automovil</option>
+            <option value="SinVehiculoPropio">Sin Vehiculo Propio</option>
+            <option value="camioneta">Camioneta</option>
+            <option value="MotorHome">MotorHome</option>
+        </select>
+        <br>
+        <label for="requierecochera">requiere cochera</label>
+        <select name="requierecochera" id="requierecochera">
+            <option value="si">si</option>
+            <option value="no">no</option>
+        </select>
+        <p>instalaciones a utilizar</p>
+        <label for="hidromasaje">hidromasaje</label>
+        <input type="checkbox" name="hidromasaje" id="hidromasaje">
+        <label for="sauna">sauna</label>
+        <input type="checkbox" name="sauna" id="sauna">
+        <label for="piscina">piscina</label>
+        <input type="checkbox" name="piscina" id="piscina">
+        <label for="gimnasio">gimnasio</label>
+        <input type="checkbox" name="gimnasio" id="gimnasio">
+        <br>
+        <label for="siono">¿llevara mascota?</label>
+        <select name="siono" id="siono">
+            <option value="si">si</option>
+            <option value="no">no</option>
+        </select>
+        <br>
+        <label for="informacionAdicional">informacion adicional</label>
+        <textarea name="informacionAdicional" id="informacionAdicional" cols="50" rows="10"></textarea>
+    </form>
+    <form>
+        <button type="submit" style="background-color: rgb(60, 135, 205);"><a href="solicilitada.html" style="color: azure;">Solicitar reserva</a></button>
+        <button style="background-color: rgb(60, 135, 205);"><a href="consulta.html" style="color: azure;">Consultar disponibilidad</a></button>
+        <button type="reset" style="background-color: rgb(225 95 75);"><a href="paginaprincipal.html" style="color: azure;">Cancelar</a></button>
+    </form>
+</body>
+</html>
